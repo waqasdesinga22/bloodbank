@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap\bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrap\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrapj\js/bootstrap.min.js" type="text/css">
+    <link rel="stylesheet" href="../css\home.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="manifest" href="../manifest.json">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
+<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <title>Document</title>
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-danger" style="height:65px;">
+        <a class="navbar-brand" href="./profile.html" >  <center> <img src="../images\\set.png" alt="" height="30px" width="30px"> </center> <strong style="font-size:13px">  PROFILE SETTINGS</strong> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="navbar-brand a" href="./acceptor.html" >  <center> <img src="../images\\donor.png" alt="" height="30px" width="30px" > </center><strong style="font-size:13px" > DONORS</strong>  <span class="sr-only">(current)</span></a>
+
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+
+              <div class="form-row align-items-center pull-right ">
+
+                <div class="col-auto">
+
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <!-- <input type="text"   style="display: none"  class="form-control" id="inlineFormInputGroup" placeholder="abc@example.com"> -->
+                  </div>
+                </div>
+
+
+
+                <div class="col-auto">
+                  <!-- <input type="password" style="display: none" class="form-control mb-2" id="inlineFormInput" placeholder="Password"> -->
+                </div>
+
+
+
+              </div>
+
+
+
+
+</form>
+        </div>
+      </nav>
+
+
+<div class="d-flex justify-content-center"> <h1><strong class="head" style="font-family: 'Philosopher', sans-serif;"> WELCOME TO BLOOD BANK</strong></h1></div>
+
+
+
+
+
+<!--            Regiter form bootstrap -->
+<!-- <div class="input-group mb-6 col-auto col-xs-4 col-sm-4 col-md-6 pull-centre">
+    <div class="input-group-prepend  mb-2  ">
+      <span class="input-group-text" id="">First and last name</span>
+    </div>
+    <input type="text" class="form-control">
+    
+  </div> -->
+  <div id="loader" class="col-md-12  text-center " >
+        
+    <br/><br/>
+    <h3 class="h3" style="font-family:'Coiny', cursive;">Please Wait..</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="loader14">
+                <div class="loader-inner">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                    <div class="box-3"></div>
+                    <div class="box-4"></div>
+                </div>
+                <span class="text">loading</span>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+  
+  </div>
+  
+
+  <form autocomplete="off" class="none" id="reg" style="display: none">
+    <div class="form-row align-items-center pull-right pull-right  col-sm-10 col-md-8">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form role="form">
+                    <h2> <strong class="head1"> Change Profile <small>then click save changes</small></strong></h2>
+                    <hr class="colorgraph">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" id="name_profile"  class="form-control input-lg" placeholder="Name#" tabindex="1">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="age" id="age_profile" class="form-control input-lg" placeholder="Age#" tabindex="2">
+
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="name" id="Contact" class="form-control input-lg" placeholder="Contact#" tabindex="4">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                >
+                            
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <input type="text" name="address" id="address_profile" class="form-control input-lg" placeholder="Address#" tabindex="3">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="contact" id="contact_profile" class="form-control input-lg" placeholder="Contact#" tabindex="4">
+
+                    </div>
+
+
+
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                  
+                                </div>
+                            </div>
+
+                    <div class="form-group">
+                    
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div> -->
+                        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Discard</a></div>
+                        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" onClick="changes()" >Save Changes</a></div>
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-3 col-md-3">
+                            <span class="button-checkbox">
+                                
+                        </div>
+                        
+                        <div  class="col-xs-8 col-sm-12 col-md-12">
+                           <label for=""  style="color: black">  By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m" style="color: black" >Terms and Conditions</a> set out by this site, including our Cookie Use.</label>
+                            </div>
+                        </div>
+                        
+                       
+                        
+                    </form>
+                </div>
+            </div>
+            <!-- Modal -->
+           <!-- /.modal -->
+        </div>
+    </form> 
+        
+
+   
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCjnsHDPmBu4r3x6Sbe2X3pp0ksk9eh0NE",
+    authDomain: "waqas-ae300.firebaseapp.com",
+    databaseURL: "https://waqas-ae300.firebaseio.com",
+    projectId: "waqas-ae300",
+    storageBucket: "waqas-ae300.appspot.com",
+    messagingSenderId: "300383239440"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="../js\prof.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

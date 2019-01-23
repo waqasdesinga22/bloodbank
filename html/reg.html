@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap\bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrap\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrapj\js/bootstrap.min.js" type="text/css">
+    <link rel="stylesheet" href="../css\home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    
+<!-- <link href="../bootstrap\bootstrap-imgupload.css" rel="stylesheet">
+<script src="../bootstrapj\js\jquery-1.12.2.min.js"></script>
+
+<script src="../bootstrapj\js/bootstrap-imgupload.js"></script> -->
+
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
+<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <title>Document</title>
+</head>
+<body class="body">
+      
+
+
+
+
+
+
+
+
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-danger" style="height:65px;">
+                <a class="navbar-brand" href="./home.html">  <center> <img src="https://firebasestorage.googleapis.com/v0/b/waqas-ae300.appspot.com/o/userimages%2Fhome.gif?alt=media&token=7c40043f-e539-42de-920f-2c4113d80b78" alt="" height="20px" width="20px"> </center> <strong style="font-size:13px">  HOME</strong> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="navbar-brand a" href="./reg.html" >  <center> <img src="https://firebasestorage.googleapis.com/v0/b/waqas-ae300.appspot.com/o/userimages%2Flist.gif?alt=media&token=12c0472a-5919-481d-9c15-76c5d9f61bea" alt="" height="15px" width="15px" >  <img src="https://firebasestorage.googleapis.com/v0/b/waqas-ae300.appspot.com/o/userimages%2Fcreate.gif?alt=media&token=1ad0a992-e4be-4141-8cd2-392044a20bc4" alt="" height="15px" width="15px"> </center><strong style="font-size:13px" > REGISTER HERE </strong>  <span class="sr-only">(current)</span></a>
+                      
+                    </li>
+                    <li class="nav-item">
+                      <a class=" navbar-brand" href="./contact.html">  <center> <img src="https://firebasestorage.googleapis.com/v0/b/waqas-ae300.appspot.com/o/userimages%2Fcontact.png?alt=media&token=066eab1a-ffb3-4fb3-a7eb-900bb1f1ab1a" style="width:30px;height:30px" alt="" height="15px" width="15px"> </center>  <strong style="font-size:13px" >CONTACT US</strong>  </a>
+                    </li>
+                  </ul>
+                 
+                  <form autocomplete='off' class="form-inline my-2 my-lg-0">
+                        
+                                <div class="form-row align-items-center pull-right ">
+                                 
+                                  <div class="col-auto">
+                                   
+                                    <div class="input-group mb-2">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                      </div>
+                                      <input type="text"  id="login_email" class="form-control" id="inlineFormInputGroup" placeholder="abc@example.com">
+                                    </div>
+                                  </div>
+                        
+                        
+                        
+                                  <div class="col-auto">
+                                    <input type="password"  id="login_password"  class="form-control mb-2" id="inlineFormInput" placeholder="Password">
+                                  </div>
+                        
+                        
+                        
+                                  <div class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-2" onClick="login()" >Login</button>
+                                  </div>
+                                </div>
+
+
+
+                        
+                  </form>
+                </div>
+              </nav>
+              
+
+<div class="d-flex justify-content-center"> <h1><strong class="head" style="font-family: 'Philosopher', sans-serif;"> WELCOME TO BLOOD BANK</strong></h1></div>
+
+
+
+<!--            Regiter form bootstrap -->
+<div id="loader" class="col-md-12  text-center " style=" display: none;">
+        
+    <br/><br/>
+    <h3 class="h3" style="font-family:'Coiny', cursive;">Please Wait..</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="loader14">
+                <div class="loader-inner">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                    <div class="box-3"></div>
+                    <div class="box-4"></div>
+                </div>
+                <span class="text">loading</span>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+
+</div>
+
+    
+<form autocomplete="off" class="none" id="reg">
+        <div class="form-row align-items-center pull-right pull-right  col-sm-10 col-md-8">
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form role="form">
+                        <h2> <strong class="head1"> Please Sign Up <small>It's free and always will be.</small></strong></h2>
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Full Name" tabindex="1">
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" id="age" class="form-control input-lg" placeholder="Age" tabindex="2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="display_name" id="Address" class="form-control input-lg" placeholder="Address" tabindex="3">
+
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="Contact" id="Contact" class="form-control input-lg" placeholder="Contact#" tabindex="4">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    >
+                                
+
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="form-group">
+                            <input type="text" name="Contact" id="Contact" class="form-control input-lg" placeholder="Contact#" tabindex="4">
+
+                        </div>
+                        <div id="rates" class="form-group">
+                            <label class="gender radio-inline"> <strong class="gender"  style="color:teal"> Gender: </strong> </label>
+                        <input type="radio" class="rate" id="r1" name="rate" value="Male" checked>Male
+                        <input type="radio" id="r2" class="rate" name="rate" value="Female">Female
+                        
+                      </div>
+
+
+
+                        <div class="form-group">
+                            <label class="gender radio-inline"> <strong class="gender "  style="color:teal"> User Type : </strong> </label>
+                                        <div id="radioBtn" class="btn-group">
+                                                <a id="aaa" onClick="follow(this)" class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">Donor</a>
+                                                <a id="aaa" onClick="follow(this)" class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">Acceptor</a>                    
+                                            
+                                        </div>
+                        </div>
+                        <div class="btn-group dropright">
+                                <label class="gender radio-inline"> <strong class="  gender" style="color:teal"> Blood Type : </strong> </label>
+                                <button id="blood" type="button" class="btn btn-secondary">
+                                 No Select
+                                </button>
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropright</span>
+                                </button>
+                                <div class="dropdown-menu"  id="bloodgroup">
+                                        <a  onClick="follow1(this)" class="dropdown-item" href="#">A+</a>
+                                        <a  onClick="follow1(this)" class="dropdown-item" href="#">A-</a>
+                                        <a  onClick="follow1(this)" class="dropdown-item" href="#">B+</a>
+                                        <a  onClick="follow1(this)" class="dropdown-item" href="#">B-</a>
+                                        <a onClick="follow1(this)" class="dropdown-item" href="#">AB+</a>
+                                        <a onClick="follow1(this)" class="dropdown-item" href="#">AB-</a>
+                                        <a onClick="follow1(this)" class="dropdown-item" href="#">O+</a>
+                                        <a onClick="follow1(this)" class="dropdown-item" href="#">O-</a>
+                                       
+                
+                                </div>
+                                
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                      
+                                    </div>
+                                </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3">
+                                <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>                                </span>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9">
+                                 By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                                </div>
+                            </div>
+                            
+                            <hr class="colorgraph">
+                            <div class="row">
+                                <!-- <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div> -->
+                                <div class="col-xs-12 col-md-6"><a href="./reg.html" class="btn btn-success btn-block btn-lg">Discard</a></div>
+                                <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" onClick="Register()" >Register</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                                <p style="background-color:transparent; color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div>
+        </form> 
+            
+
+       
+    
+    
+    <!-- upload image -->
+
+
+
+
+        
+
+
+   
+
+</body>
+<script src="../js\app.js"></script>
+<script src="../js\app1.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCjnsHDPmBu4r3x6Sbe2X3pp0ksk9eh0NE",
+    authDomain: "waqas-ae300.firebaseapp.com",
+    databaseURL: "https://waqas-ae300.firebaseio.com",
+    projectId: "waqas-ae300",
+    storageBucket: "waqas-ae300.appspot.com",
+    messagingSenderId: "300383239440"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
